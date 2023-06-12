@@ -20,3 +20,11 @@ For example, start with 87:
 
 
 // Solution
+
+let palindromeChainLength = function(n) {
+  let x = parseInt( (""+n).split('').reverse().join('') );
+  if(n != x) {
+    return 1 + palindromeChainLength (n + x);
+  }
+  return 0;
+};
