@@ -30,3 +30,8 @@ let palindromeChainLength = function(n) {
 };
 
 // or
+
+let palindromeChain = function(n) {
+  let r = 1 * n.toString().split('').reverse().join('');
+  return n - r && 1 + palindromeChainLength(r + n);
+};
