@@ -28,3 +28,5 @@ let palindromeChainLength = function(n) {
   }
   return 0;
 };
+
+// or
